@@ -16,8 +16,14 @@ const usuariosRef = db.collection('usuarios');
 //  })
 //  .catch{e => console.log('error', e)}
 //  delete from usuario where id = 'xx'
+//  then () => console.log('bborado')
+// .catch e => consoles,log('error' , r);
+
+
+// select = from usuarios ;
+
 usuariosRef
-.doc('https://console.firebase.google.com/project/undefined/firestore/data/Fernando%20/XRYxOuyl8AaRTrpo0eO6')
-.delete()
-.then() 
-.catch{e => console.log('error', e)}
+.onSnapshot(snap => {
+    sna.forEach( snapHijo => )
+    console.log(snapHijo.data())
+});
