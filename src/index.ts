@@ -15,5 +15,9 @@ const usuariosRef = db.collection('usuarios');
  //   console.log(docRef)
 //  })
 //  .catch{e => console.log('error', e)}
-
-usuariosRef.doc('https://console.firebase.google.com/project/undefined/firestore/data/Fernando%20/XRYxOuyl8AaRTrpo0eO6')
+//  delete from usuario where id = 'xx'
+usuariosRef
+.doc('https://console.firebase.google.com/project/undefined/firestore/data/Fernando%20/XRYxOuyl8AaRTrpo0eO6')
+.delete()
+.then() 
+.catch{e => console.log('error', e)}
