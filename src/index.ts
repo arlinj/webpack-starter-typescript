@@ -9,4 +9,7 @@ const usuario = {
 // insert into usuarios ....
 
 db.collection('usuarios')
-    .add( usuarios )
+    .add( usuario )
+    .then(docRef => {
+        console.log(docRef)
+    }
